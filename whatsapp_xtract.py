@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 '''
 WhatsApp Xtract v2.3.1
 - WhatsApp Backup Messages Extractor for Android and iPhone
@@ -301,383 +301,6 @@ class Message:
 # Smileys conversion function
 def convertsmileys_python3 (text):
     newtext = str(text)
-    
-    # new emojis
-    newtext = newtext.replace('\U0001F0CF', '<img src="data/emoji_new/1F0CF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F191', '<img src="data/emoji_new/1F191.png" alt=""/>')
-    newtext = newtext.replace('\U0001F193', '<img src="data/emoji_new/1F193.png" alt=""/>')
-    newtext = newtext.replace('\U0001F196', '<img src="data/emoji_new/1F196.png" alt=""/>')
-    newtext = newtext.replace('\U0001F198', '<img src="data/emoji_new/1F198.png" alt=""/>')
-    newtext = newtext.replace('\U0001F232', '<img src="data/emoji_new/1F232.png" alt=""/>')
-    newtext = newtext.replace('\U0001F234', '<img src="data/emoji_new/1F234.png" alt=""/>')
-    newtext = newtext.replace('\U0001F251', '<img src="data/emoji_new/1F251.png" alt=""/>')
-    newtext = newtext.replace('\U0001F301', '<img src="data/emoji_new/1F301.png" alt=""/>')
-    newtext = newtext.replace('\U0001F309', '<img src="data/emoji_new/1F309.png" alt=""/>')
-    newtext = newtext.replace('\U0001F30B', '<img src="data/emoji_new/1F30B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F30C', '<img src="data/emoji_new/1F30C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F30D', '<img src="data/emoji_new/1F30D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F30E', '<img src="data/emoji_new/1F30E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F30F', '<img src="data/emoji_new/1F30F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F310', '<img src="data/emoji_new/1F310.png" alt=""/>')
-    newtext = newtext.replace('\U0001F311', '<img src="data/emoji_new/1F311.png" alt=""/>')
-    newtext = newtext.replace('\U0001F312', '<img src="data/emoji_new/1F312.png" alt=""/>')
-    newtext = newtext.replace('\U0001F313', '<img src="data/emoji_new/1F313.png" alt=""/>')
-    newtext = newtext.replace('\U0001F314', '<img src="data/emoji_new/1F314.png" alt=""/>')
-    newtext = newtext.replace('\U0001F315', '<img src="data/emoji_new/1F315.png" alt=""/>')
-    newtext = newtext.replace('\U0001F316', '<img src="data/emoji_new/1F316.png" alt=""/>')
-    newtext = newtext.replace('\U0001F317', '<img src="data/emoji_new/1F317.png" alt=""/>')
-    newtext = newtext.replace('\U0001F318', '<img src="data/emoji_new/1F318.png" alt=""/>')
-    newtext = newtext.replace('\U0001F31A', '<img src="data/emoji_new/1F31A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F31B', '<img src="data/emoji_new/1F31B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F31C', '<img src="data/emoji_new/1F31C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F31D', '<img src="data/emoji_new/1F31D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F31E', '<img src="data/emoji_new/1F31E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F320', '<img src="data/emoji_new/1F320.png" alt=""/>')
-    newtext = newtext.replace('\U0001F330', '<img src="data/emoji_new/1F330.png" alt=""/>')
-    newtext = newtext.replace('\U0001F331', '<img src="data/emoji_new/1F331.png" alt=""/>')
-    newtext = newtext.replace('\U0001F332', '<img src="data/emoji_new/1F332.png" alt=""/>')
-    newtext = newtext.replace('\U0001F333', '<img src="data/emoji_new/1F333.png" alt=""/>')
-    newtext = newtext.replace('\U0001F33C', '<img src="data/emoji_new/1F33C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F33D', '<img src="data/emoji_new/1F33D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F33F', '<img src="data/emoji_new/1F33F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F344', '<img src="data/emoji_new/1F344.png" alt=""/>')
-    newtext = newtext.replace('\U0001F347', '<img src="data/emoji_new/1F347.png" alt=""/>')
-    newtext = newtext.replace('\U0001F348', '<img src="data/emoji_new/1F348.png" alt=""/>')
-    newtext = newtext.replace('\U0001F34B', '<img src="data/emoji_new/1F34B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F34C', '<img src="data/emoji_new/1F34C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F34D', '<img src="data/emoji_new/1F34D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F34F', '<img src="data/emoji_new/1F34F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F350', '<img src="data/emoji_new/1F350.png" alt=""/>')
-    newtext = newtext.replace('\U0001F351', '<img src="data/emoji_new/1F351.png" alt=""/>')
-    newtext = newtext.replace('\U0001F352', '<img src="data/emoji_new/1F352.png" alt=""/>')
-    newtext = newtext.replace('\U0001F355', '<img src="data/emoji_new/1F355.png" alt=""/>')
-    newtext = newtext.replace('\U0001F356', '<img src="data/emoji_new/1F356.png" alt=""/>')
-    newtext = newtext.replace('\U0001F357', '<img src="data/emoji_new/1F357.png" alt=""/>')
-    newtext = newtext.replace('\U0001F360', '<img src="data/emoji_new/1F360.png" alt=""/>')
-    newtext = newtext.replace('\U0001F364', '<img src="data/emoji_new/1F364.png" alt=""/>')
-    newtext = newtext.replace('\U0001F365', '<img src="data/emoji_new/1F365.png" alt=""/>')
-    newtext = newtext.replace('\U0001F368', '<img src="data/emoji_new/1F368.png" alt=""/>')
-    newtext = newtext.replace('\U0001F369', '<img src="data/emoji_new/1F369.png" alt=""/>')
-    newtext = newtext.replace('\U0001F36A', '<img src="data/emoji_new/1F36A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F36B', '<img src="data/emoji_new/1F36B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F36C', '<img src="data/emoji_new/1F36C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F36D', '<img src="data/emoji_new/1F36D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F36E', '<img src="data/emoji_new/1F36E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F36F', '<img src="data/emoji_new/1F36F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F377', '<img src="data/emoji_new/1F377.png" alt=""/>')
-    newtext = newtext.replace('\U0001F379', '<img src="data/emoji_new/1F379.png" alt=""/>')
-    newtext = newtext.replace('\U0001F37C', '<img src="data/emoji_new/1F37C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F38A', '<img src="data/emoji_new/1F38A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F38B', '<img src="data/emoji_new/1F38B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3A0', '<img src="data/emoji_new/1F3A0.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3A3', '<img src="data/emoji_new/1F3A3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3AA', '<img src="data/emoji_new/1F3AA.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3AD', '<img src="data/emoji_new/1F3AD.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3AE', '<img src="data/emoji_new/1F3AE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3B2', '<img src="data/emoji_new/1F3B2.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3B3', '<img src="data/emoji_new/1F3B3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3B4', '<img src="data/emoji_new/1F3B4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3B9', '<img src="data/emoji_new/1F3B9.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3BB', '<img src="data/emoji_new/1F3BB.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3BC', '<img src="data/emoji_new/1F3BC.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3BD', '<img src="data/emoji_new/1F3BD.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3C2', '<img src="data/emoji_new/1F3C2.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3C7', '<img src="data/emoji_new/1F3C7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3C9', '<img src="data/emoji_new/1F3C9.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3E1', '<img src="data/emoji_new/1F3E1.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3E4', '<img src="data/emoji_new/1F3E4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F3EE', '<img src="data/emoji_new/1F3EE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F400', '<img src="data/emoji_new/1F400.png" alt=""/>')
-    newtext = newtext.replace('\U0001F401', '<img src="data/emoji_new/1F401.png" alt=""/>')
-    newtext = newtext.replace('\U0001F402', '<img src="data/emoji_new/1F402.png" alt=""/>')
-    newtext = newtext.replace('\U0001F403', '<img src="data/emoji_new/1F403.png" alt=""/>')
-    newtext = newtext.replace('\U0001F404', '<img src="data/emoji_new/1F404.png" alt=""/>')
-    newtext = newtext.replace('\U0001F405', '<img src="data/emoji_new/1F405.png" alt=""/>')
-    newtext = newtext.replace('\U0001F406', '<img src="data/emoji_new/1F406.png" alt=""/>')
-    newtext = newtext.replace('\U0001F407', '<img src="data/emoji_new/1F407.png" alt=""/>')
-    newtext = newtext.replace('\U0001F408', '<img src="data/emoji_new/1F408.png" alt=""/>')
-    newtext = newtext.replace('\U0001F409', '<img src="data/emoji_new/1F409.png" alt=""/>')
-    newtext = newtext.replace('\U0001F40A', '<img src="data/emoji_new/1F40A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F40B', '<img src="data/emoji_new/1F40B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F40C', '<img src="data/emoji_new/1F40C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F40F', '<img src="data/emoji_new/1F40F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F410', '<img src="data/emoji_new/1F410.png" alt=""/>')
-    newtext = newtext.replace('\U0001F413', '<img src="data/emoji_new/1F413.png" alt=""/>')
-    newtext = newtext.replace('\U0001F415', '<img src="data/emoji_new/1F415.png" alt=""/>')
-    newtext = newtext.replace('\U0001F416', '<img src="data/emoji_new/1F416.png" alt=""/>')
-    newtext = newtext.replace('\U0001F41C', '<img src="data/emoji_new/1F41C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F41D', '<img src="data/emoji_new/1F41D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F41E', '<img src="data/emoji_new/1F41E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F421', '<img src="data/emoji_new/1F421.png" alt=""/>')
-    newtext = newtext.replace('\U0001F422', '<img src="data/emoji_new/1F422.png" alt=""/>')
-    newtext = newtext.replace('\U0001F423', '<img src="data/emoji_new/1F423.png" alt=""/>')
-    newtext = newtext.replace('\U0001F425', '<img src="data/emoji_new/1F425.png" alt=""/>')
-    newtext = newtext.replace('\U0001F429', '<img src="data/emoji_new/1F429.png" alt=""/>')
-    newtext = newtext.replace('\U0001F42A', '<img src="data/emoji_new/1F42A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F432', '<img src="data/emoji_new/1F432.png" alt=""/>')
-    newtext = newtext.replace('\U0001F43C', '<img src="data/emoji_new/1F43C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F43D', '<img src="data/emoji_new/1F43D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F43E', '<img src="data/emoji_new/1F43E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F445', '<img src="data/emoji_new/1F445.png" alt=""/>')
-    newtext = newtext.replace('\U0001F453', '<img src="data/emoji_new/1F453.png" alt=""/>')
-    newtext = newtext.replace('\U0001F456', '<img src="data/emoji_new/1F456.png" alt=""/>')
-    newtext = newtext.replace('\U0001F45A', '<img src="data/emoji_new/1F45A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F45B', '<img src="data/emoji_new/1F45B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F45D', '<img src="data/emoji_new/1F45D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F45E', '<img src="data/emoji_new/1F45E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F464', '<img src="data/emoji_new/1F464.png" alt=""/>')
-    newtext = newtext.replace('\U0001F465', '<img src="data/emoji_new/1F465.png" alt=""/>')
-    newtext = newtext.replace('\U0001F46A', '<img src="data/emoji_new/1F46A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F46C', '<img src="data/emoji_new/1F46C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F46D', '<img src="data/emoji_new/1F46D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F470', '<img src="data/emoji_new/1F470.png" alt=""/>')
-    newtext = newtext.replace('\U0001F479', '<img src="data/emoji_new/1F479.png" alt=""/>')
-    newtext = newtext.replace('\U0001F47A', '<img src="data/emoji_new/1F47A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F48C', '<img src="data/emoji_new/1F48C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F495', '<img src="data/emoji_new/1F495.png" alt=""/>')
-    newtext = newtext.replace('\U0001F496', '<img src="data/emoji_new/1F496.png" alt=""/>')
-    newtext = newtext.replace('\U0001F49E', '<img src="data/emoji_new/1F49E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4A0', '<img src="data/emoji_new/1F4A0.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4A5', '<img src="data/emoji_new/1F4A5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4A7', '<img src="data/emoji_new/1F4A7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4AB', '<img src="data/emoji_new/1F4AB.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4AC', '<img src="data/emoji_new/1F4AC.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4AD', '<img src="data/emoji_new/1F4AD.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4AE', '<img src="data/emoji_new/1F4AE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4AF', '<img src="data/emoji_new/1F4AF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B2', '<img src="data/emoji_new/1F4B2.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B3', '<img src="data/emoji_new/1F4B3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B4', '<img src="data/emoji_new/1F4B4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B5', '<img src="data/emoji_new/1F4B5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B6', '<img src="data/emoji_new/1F4B6.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B7', '<img src="data/emoji_new/1F4B7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4B8', '<img src="data/emoji_new/1F4B8.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4BE', '<img src="data/emoji_new/1F4BE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C1', '<img src="data/emoji_new/1F4C1.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C2', '<img src="data/emoji_new/1F4C2.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C3', '<img src="data/emoji_new/1F4C3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C4', '<img src="data/emoji_new/1F4C4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C5', '<img src="data/emoji_new/1F4C5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C6', '<img src="data/emoji_new/1F4C6.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C7', '<img src="data/emoji_new/1F4C7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C8', '<img src="data/emoji_new/1F4C8.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4C9', '<img src="data/emoji_new/1F4C9.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4CA', '<img src="data/emoji_new/1F4CA.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4CB', '<img src="data/emoji_new/1F4CB.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4CC', '<img src="data/emoji_new/1F4CC.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4CD', '<img src="data/emoji_new/1F4CD.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4CE', '<img src="data/emoji_new/1F4CE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4CF', '<img src="data/emoji_new/1F4CF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D0', '<img src="data/emoji_new/1F4D0.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D1', '<img src="data/emoji_new/1F4D1.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D2', '<img src="data/emoji_new/1F4D2.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D3', '<img src="data/emoji_new/1F4D3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D4', '<img src="data/emoji_new/1F4D4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D5', '<img src="data/emoji_new/1F4D5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D7', '<img src="data/emoji_new/1F4D7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D8', '<img src="data/emoji_new/1F4D8.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4D9', '<img src="data/emoji_new/1F4D9.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4DA', '<img src="data/emoji_new/1F4DA.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4DB', '<img src="data/emoji_new/1F4DB.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4DC', '<img src="data/emoji_new/1F4DC.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4DE', '<img src="data/emoji_new/1F4DE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4DF', '<img src="data/emoji_new/1F4DF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4E4', '<img src="data/emoji_new/1F4E4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4E5', '<img src="data/emoji_new/1F4E5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4E6', '<img src="data/emoji_new/1F4E6.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4E7', '<img src="data/emoji_new/1F4E7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4E8', '<img src="data/emoji_new/1F4E8.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4EA', '<img src="data/emoji_new/1F4EA.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4EC', '<img src="data/emoji_new/1F4EC.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4ED', '<img src="data/emoji_new/1F4ED.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4EF', '<img src="data/emoji_new/1F4EF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4F0', '<img src="data/emoji_new/1F4F0.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4F5', '<img src="data/emoji_new/1F4F5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F4F9', '<img src="data/emoji_new/1F4F9.png" alt=""/>')
-    newtext = newtext.replace('\U0001F500', '<img src="data/emoji_new/1F500.png" alt=""/>')
-    newtext = newtext.replace('\U0001F501', '<img src="data/emoji_new/1F501.png" alt=""/>')
-    newtext = newtext.replace('\U0001F502', '<img src="data/emoji_new/1F502.png" alt=""/>')
-    newtext = newtext.replace('\U0001F503', '<img src="data/emoji_new/1F503.png" alt=""/>')
-    newtext = newtext.replace('\U0001F504', '<img src="data/emoji_new/1F504.png" alt=""/>')
-    newtext = newtext.replace('\U0001F505', '<img src="data/emoji_new/1F505.png" alt=""/>')
-    newtext = newtext.replace('\U0001F506', '<img src="data/emoji_new/1F506.png" alt=""/>')
-    newtext = newtext.replace('\U0001F507', '<img src="data/emoji_new/1F507.png" alt=""/>')
-    newtext = newtext.replace('\U0001F508', '<img src="data/emoji_new/1F508.png" alt=""/>')
-    newtext = newtext.replace('\U0001F509', '<img src="data/emoji_new/1F509.png" alt=""/>')
-    newtext = newtext.replace('\U0001F50B', '<img src="data/emoji_new/1F50B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F50C', '<img src="data/emoji_new/1F50C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F50E', '<img src="data/emoji_new/1F50E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F50F', '<img src="data/emoji_new/1F50F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F510', '<img src="data/emoji_new/1F510.png" alt=""/>')
-    newtext = newtext.replace('\U0001F515', '<img src="data/emoji_new/1F515.png" alt=""/>')
-    newtext = newtext.replace('\U0001F516', '<img src="data/emoji_new/1F516.png" alt=""/>')
-    newtext = newtext.replace('\U0001F517', '<img src="data/emoji_new/1F517.png" alt=""/>')
-    newtext = newtext.replace('\U0001F518', '<img src="data/emoji_new/1F518.png" alt=""/>')
-    newtext = newtext.replace('\U0001F519', '<img src="data/emoji_new/1F519.png" alt=""/>')
-    newtext = newtext.replace('\U0001F51A', '<img src="data/emoji_new/1F51A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F51B', '<img src="data/emoji_new/1F51B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F51C', '<img src="data/emoji_new/1F51C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F51F', '<img src="data/emoji_new/1F51F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F520', '<img src="data/emoji_new/1F520.png" alt=""/>')
-    newtext = newtext.replace('\U0001F521', '<img src="data/emoji_new/1F521.png" alt=""/>')
-    newtext = newtext.replace('\U0001F522', '<img src="data/emoji_new/1F522.png" alt=""/>')
-    newtext = newtext.replace('\U0001F523', '<img src="data/emoji_new/1F523.png" alt=""/>')
-    newtext = newtext.replace('\U0001F524', '<img src="data/emoji_new/1F524.png" alt=""/>')
-    newtext = newtext.replace('\U0001F526', '<img src="data/emoji_new/1F526.png" alt=""/>')
-    newtext = newtext.replace('\U0001F527', '<img src="data/emoji_new/1F527.png" alt=""/>')
-    newtext = newtext.replace('\U0001F529', '<img src="data/emoji_new/1F529.png" alt=""/>')
-    newtext = newtext.replace('\U0001F52A', '<img src="data/emoji_new/1F52A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F52C', '<img src="data/emoji_new/1F52C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F52D', '<img src="data/emoji_new/1F52D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F52E', '<img src="data/emoji_new/1F52E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F535', '<img src="data/emoji_new/1F535.png" alt=""/>')
-    newtext = newtext.replace('\U0001F536', '<img src="data/emoji_new/1F536.png" alt=""/>')
-    newtext = newtext.replace('\U0001F537', '<img src="data/emoji_new/1F537.png" alt=""/>')
-    newtext = newtext.replace('\U0001F538', '<img src="data/emoji_new/1F538.png" alt=""/>')
-    newtext = newtext.replace('\U0001F539', '<img src="data/emoji_new/1F539.png" alt=""/>')
-    newtext = newtext.replace('\U0001F53A', '<img src="data/emoji_new/1F53A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F53B', '<img src="data/emoji_new/1F53B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F53C', '<img src="data/emoji_new/1F53C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F53D', '<img src="data/emoji_new/1F53D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F55C', '<img src="data/emoji_new/1F55C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F55D', '<img src="data/emoji_new/1F55D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F55E', '<img src="data/emoji_new/1F55E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F55F', '<img src="data/emoji_new/1F55F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F560', '<img src="data/emoji_new/1F560.png" alt=""/>')
-    newtext = newtext.replace('\U0001F561', '<img src="data/emoji_new/1F561.png" alt=""/>')
-    newtext = newtext.replace('\U0001F562', '<img src="data/emoji_new/1F562.png" alt=""/>')
-    newtext = newtext.replace('\U0001F563', '<img src="data/emoji_new/1F563.png" alt=""/>')
-    newtext = newtext.replace('\U0001F564', '<img src="data/emoji_new/1F564.png" alt=""/>')
-    newtext = newtext.replace('\U0001F565', '<img src="data/emoji_new/1F565.png" alt=""/>')
-    newtext = newtext.replace('\U0001F566', '<img src="data/emoji_new/1F566.png" alt=""/>')
-    newtext = newtext.replace('\U0001F567', '<img src="data/emoji_new/1F567.png" alt=""/>')
-    newtext = newtext.replace('\U0001F5FE', '<img src="data/emoji_new/1F5FE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F5FF', '<img src="data/emoji_new/1F5FF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F600', '<img src="data/emoji_new/1F600.png" alt=""/>')
-    newtext = newtext.replace('\U0001F605', '<img src="data/emoji_new/1F605.png" alt=""/>')
-    newtext = newtext.replace('\U0001F606', '<img src="data/emoji_new/1F606.png" alt=""/>')
-    newtext = newtext.replace('\U0001F607', '<img src="data/emoji_new/1F607.png" alt=""/>')
-    newtext = newtext.replace('\U0001F608', '<img src="data/emoji_new/1F608.png" alt=""/>')
-    newtext = newtext.replace('\U0001F60B', '<img src="data/emoji_new/1F60B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F60E', '<img src="data/emoji_new/1F60E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F610', '<img src="data/emoji_new/1F610.png" alt=""/>')
-    newtext = newtext.replace('\U0001F611', '<img src="data/emoji_new/1F611.png" alt=""/>')
-    newtext = newtext.replace('\U0001F615', '<img src="data/emoji_new/1F615.png" alt=""/>')
-    newtext = newtext.replace('\U0001F617', '<img src="data/emoji_new/1F617.png" alt=""/>')
-    newtext = newtext.replace('\U0001F619', '<img src="data/emoji_new/1F619.png" alt=""/>')
-    newtext = newtext.replace('\U0001F61B', '<img src="data/emoji_new/1F61B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F61F', '<img src="data/emoji_new/1F61F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F624', '<img src="data/emoji_new/1F624.png" alt=""/>')
-    newtext = newtext.replace('\U0001F626', '<img src="data/emoji_new/1F626.png" alt=""/>')
-    newtext = newtext.replace('\U0001F627', '<img src="data/emoji_new/1F627.png" alt=""/>')
-    newtext = newtext.replace('\U0001F629', '<img src="data/emoji_new/1F629.png" alt=""/>')
-    newtext = newtext.replace('\U0001F62B', '<img src="data/emoji_new/1F62B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F62C', '<img src="data/emoji_new/1F62C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F62E', '<img src="data/emoji_new/1F62E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F62F', '<img src="data/emoji_new/1F62F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F634', '<img src="data/emoji_new/1F634.png" alt=""/>')
-    newtext = newtext.replace('\U0001F635', '<img src="data/emoji_new/1F635.png" alt=""/>')
-    newtext = newtext.replace('\U0001F636', '<img src="data/emoji_new/1F636.png" alt=""/>')
-    newtext = newtext.replace('\U0001F638', '<img src="data/emoji_new/1F638.png" alt=""/>')
-    newtext = newtext.replace('\U0001F639', '<img src="data/emoji_new/1F639.png" alt=""/>')
-    newtext = newtext.replace('\U0001F63A', '<img src="data/emoji_new/1F63A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F63B', '<img src="data/emoji_new/1F63B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F63C', '<img src="data/emoji_new/1F63C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F63D', '<img src="data/emoji_new/1F63D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F63E', '<img src="data/emoji_new/1F63E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F63F', '<img src="data/emoji_new/1F63F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F640', '<img src="data/emoji_new/1F640.png" alt=""/>')
-    newtext = newtext.replace('\U0001F648', '<img src="data/emoji_new/1F648.png" alt=""/>')
-    newtext = newtext.replace('\U0001F649', '<img src="data/emoji_new/1F649.png" alt=""/>')
-    newtext = newtext.replace('\U0001F64A', '<img src="data/emoji_new/1F64A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F64B', '<img src="data/emoji_new/1F64B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F64D', '<img src="data/emoji_new/1F64D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F64E', '<img src="data/emoji_new/1F64E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F681', '<img src="data/emoji_new/1F681.png" alt=""/>')
-    newtext = newtext.replace('\U0001F682', '<img src="data/emoji_new/1F682.png" alt=""/>')
-    newtext = newtext.replace('\U0001F686', '<img src="data/emoji_new/1F686.png" alt=""/>')
-    newtext = newtext.replace('\U0001F688', '<img src="data/emoji_new/1F688.png" alt=""/>')
-    newtext = newtext.replace('\U0001F68A', '<img src="data/emoji_new/1F68A.png" alt=""/>')
-    newtext = newtext.replace('\U0001F68B', '<img src="data/emoji_new/1F68B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F68D', '<img src="data/emoji_new/1F68D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F68E', '<img src="data/emoji_new/1F68E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F690', '<img src="data/emoji_new/1F690.png" alt=""/>')
-    newtext = newtext.replace('\U0001F694', '<img src="data/emoji_new/1F694.png" alt=""/>')
-    newtext = newtext.replace('\U0001F696', '<img src="data/emoji_new/1F696.png" alt=""/>')
-    newtext = newtext.replace('\U0001F698', '<img src="data/emoji_new/1F698.png" alt=""/>')
-    newtext = newtext.replace('\U0001F69B', '<img src="data/emoji_new/1F69B.png" alt=""/>')
-    newtext = newtext.replace('\U0001F69C', '<img src="data/emoji_new/1F69C.png" alt=""/>')
-    newtext = newtext.replace('\U0001F69D', '<img src="data/emoji_new/1F69D.png" alt=""/>')
-    newtext = newtext.replace('\U0001F69E', '<img src="data/emoji_new/1F69E.png" alt=""/>')
-    newtext = newtext.replace('\U0001F69F', '<img src="data/emoji_new/1F69F.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6A0', '<img src="data/emoji_new/1F6A0.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6A1', '<img src="data/emoji_new/1F6A1.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6A3', '<img src="data/emoji_new/1F6A3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6A6', '<img src="data/emoji_new/1F6A6.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6A8', '<img src="data/emoji_new/1F6A8.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6A9', '<img src="data/emoji_new/1F6A9.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6AA', '<img src="data/emoji_new/1F6AA.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6AB', '<img src="data/emoji_new/1F6AB.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6AE', '<img src="data/emoji_new/1F6AE.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6AF', '<img src="data/emoji_new/1F6AF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B0', '<img src="data/emoji_new/1F6B0.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B1', '<img src="data/emoji_new/1F6B1.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B3', '<img src="data/emoji_new/1F6B3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B4', '<img src="data/emoji_new/1F6B4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B5', '<img src="data/emoji_new/1F6B5.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B7', '<img src="data/emoji_new/1F6B7.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6B8', '<img src="data/emoji_new/1F6B8.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6BF', '<img src="data/emoji_new/1F6BF.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6C1', '<img src="data/emoji_new/1F6C1.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6C2', '<img src="data/emoji_new/1F6C2.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6C3', '<img src="data/emoji_new/1F6C3.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6C4', '<img src="data/emoji_new/1F6C4.png" alt=""/>')
-    newtext = newtext.replace('\U0001F6C5', '<img src="data/emoji_new/1F6C5.png" alt=""/>')
-    newtext = newtext.replace('\u203C', '<img src="data/emoji_new/203C.png" alt=""/>')
-    newtext = newtext.replace('\u2049', '<img src="data/emoji_new/2049.png" alt=""/>')
-    newtext = newtext.replace('\u2139', '<img src="data/emoji_new/2139.png" alt=""/>')
-    newtext = newtext.replace('\u2194', '<img src="data/emoji_new/2194.png" alt=""/>')
-    newtext = newtext.replace('\u2195', '<img src="data/emoji_new/2195.png" alt=""/>')
-    newtext = newtext.replace('\u21A9', '<img src="data/emoji_new/21A9.png" alt=""/>')
-    newtext = newtext.replace('\u21AA', '<img src="data/emoji_new/21AA.png" alt=""/>')
-    newtext = newtext.replace('\u231A', '<img src="data/emoji_new/231A.png" alt=""/>')
-    newtext = newtext.replace('\u231B', '<img src="data/emoji_new/231B.png" alt=""/>')
-    newtext = newtext.replace('\u23EB', '<img src="data/emoji_new/23EB.png" alt=""/>')
-    newtext = newtext.replace('\u23EC', '<img src="data/emoji_new/23EC.png" alt=""/>')
-    newtext = newtext.replace('\u23F0', '<img src="data/emoji_new/23F0.png" alt=""/>')
-    newtext = newtext.replace('\u23F3', '<img src="data/emoji_new/23F3.png" alt=""/>')
-    newtext = newtext.replace('\u24C2', '<img src="data/emoji_new/24C2.png" alt=""/>')
-    newtext = newtext.replace('\u25AA', '<img src="data/emoji_new/25AA.png" alt=""/>')
-    newtext = newtext.replace('\u25AB', '<img src="data/emoji_new/25AB.png" alt=""/>')
-    newtext = newtext.replace('\u25FB', '<img src="data/emoji_new/25FB.png" alt=""/>')
-    newtext = newtext.replace('\u25FC', '<img src="data/emoji_new/25FC.png" alt=""/>')
-    newtext = newtext.replace('\u25FD', '<img src="data/emoji_new/25FD.png" alt=""/>')
-    newtext = newtext.replace('\u25FE', '<img src="data/emoji_new/25FE.png" alt=""/>')
-    newtext = newtext.replace('\u2611', '<img src="data/emoji_new/2611.png" alt=""/>')
-    newtext = newtext.replace('\u267B', '<img src="data/emoji_new/267B.png" alt=""/>')
-    newtext = newtext.replace('\u2693', '<img src="data/emoji_new/2693.png" alt=""/>')
-    newtext = newtext.replace('\u26AA', '<img src="data/emoji_new/26AA.png" alt=""/>')
-    newtext = newtext.replace('\u26AB', '<img src="data/emoji_new/26AB.png" alt=""/>')
-    newtext = newtext.replace('\u26C5', '<img src="data/emoji_new/26C5.png" alt=""/>')
-    newtext = newtext.replace('\u26D4', '<img src="data/emoji_new/26D4.png" alt=""/>')
-    newtext = newtext.replace('\u2705', '<img src="data/emoji_new/2705.png" alt=""/>')
-    newtext = newtext.replace('\u2709', '<img src="data/emoji_new/2709.png" alt=""/>')
-    newtext = newtext.replace('\u270F', '<img src="data/emoji_new/270F.png" alt=""/>')
-    newtext = newtext.replace('\u2712', '<img src="data/emoji_new/2712.png" alt=""/>')
-    newtext = newtext.replace('\u2714', '<img src="data/emoji_new/2714.png" alt=""/>')
-    newtext = newtext.replace('\u2716', '<img src="data/emoji_new/2716.png" alt=""/>')
-    newtext = newtext.replace('\u2744', '<img src="data/emoji_new/2744.png" alt=""/>')
-    newtext = newtext.replace('\u2747', '<img src="data/emoji_new/2747.png" alt=""/>')
-    newtext = newtext.replace('\u274E', '<img src="data/emoji_new/274E.png" alt=""/>')
-    newtext = newtext.replace('\u2795', '<img src="data/emoji_new/2795.png" alt=""/>')
-    newtext = newtext.replace('\u2796', '<img src="data/emoji_new/2796.png" alt=""/>')
-    newtext = newtext.replace('\u2797', '<img src="data/emoji_new/2797.png" alt=""/>')
-    newtext = newtext.replace('\u27B0', '<img src="data/emoji_new/27B0.png" alt=""/>')
-    newtext = newtext.replace('\u2934', '<img src="data/emoji_new/2934.png" alt=""/>')
-    newtext = newtext.replace('\u2935', '<img src="data/emoji_new/2935.png" alt=""/>')
-    newtext = newtext.replace('\u2B1B', '<img src="data/emoji_new/2B1B.png" alt=""/>')
-    newtext = newtext.replace('\u2B1C', '<img src="data/emoji_new/2B1C.png" alt=""/>')
-    newtext = newtext.replace('\u3030', '<img src="data/emoji_new/3030.png" alt=""/>')
     
     # old emojis
     newtext = newtext.replace('\ue415', '<img src="data/emoji/e415.png" alt=""/>')
@@ -1287,6 +910,16 @@ def filelist (type, date):
         if not date in flistptt:
             flistptt[date] = filelistonce (folder, date)
         flist = flistptt[date]
+    elif type == 'DOC':
+        folder = 'Media/WhatsApp Documents/'
+        if not date in flistdoc:
+            flistdoc[date] = filelistonce (folder, date)
+        flist = flistdoc[date]
+    elif type == 'GIF':
+        folder = 'Media/WhatsApp Animated Gifs/'
+        if not date in flistgif:
+            flistgif[date] = filelistonce (folder, date)
+        flist = flistgif[date]
     return folder, flist
 
 def findfile (type, size, localurl, date, additionaldays):
@@ -1959,11 +1592,27 @@ def main(argv):
                                 content_type = CONTENT_VIDEO
                             else:
                                 content_type = CONTENT_IMAGE
+                    elif y.media_wa_type == "2":
+                        content_type = CONTENT_AUDIO
+                    elif y.media_wa_type == "9":
+                        content_type = CONTENT_MEDIA_DOC
+                    elif y.media_wa_type == "10":
+                        content_type = CONTENT_MISSED_CALL
+                    elif y.media_wa_type == "11":
+                        content_type = CONTENT_E2E
+                    elif y.media_wa_type == "13":
+                        content_type = CONTENT_GIF
+                    elif y.media_wa_type == "14":
+                        content_type = CONTENT_VCARDS
+                    elif y.media_wa_type == "15":
+                        content_type = CONTENT_DELETED_MSG
+                    elif y.media_wa_type == "16":
+                        content_type = CONTENT_LIVE_LOC
+                    elif y.media_wa_type == "20":
+                        content_type = CONTENT_STICKER            
                     else:
-                        if y.media_wa_type == "2":
-                            content_type = CONTENT_AUDIO
-                        else:
-                            content_type = CONTENT_TEXT
+                        print ("y.media_wa_type = " + str(y.media_wa_type) + " ---> " + str(y.local_url))
+                        content_type = CONTENT_TEXT
             # IPHONE mode
             elif mode == IPHONE:
                 # prepare thumb
@@ -2041,6 +1690,13 @@ def main(argv):
                         chat_file.write('<td class="text"><a onclick="image(this.href);return(false);" target="image" href="{}"><img src="{}" alt="Image"/></a>'.format(linkimage, y.media_thumb).encode('utf-8'))
                     except:
                         chat_file.write('<td class="text">Image N/A'.encode('utf-8'))
+                elif content_type == CONTENT_GIF:
+                    #Search for offline file with current date (+3 days) and known media size                   
+                    linkvideo = findfile ("GIF", y.media_size, y.local_url, date, 3)
+                    try:
+                        chat_file.write('<td class="text"><a onclick="media(this.href);return(false);" target="media" href="{}">GIF</a>'.format(linkvideo, mduration).encode('utf-8'))
+                    except:
+                        chat_file.write('<td class="text">GIF N/A'.encode('utf-8'))
                 elif content_type == CONTENT_AUDIO:
                     #Search for offline file with current date (+3 days) and known media size
                     linkaudio = findfile ("PTT", y.media_size, y.local_url, date, 3)
@@ -2079,6 +1735,20 @@ def main(argv):
                         chat_file.write('<td class="text"><a onclick="media(this.href);return(false);" target="media" href="{}">Media</a>'.format(linkmedia).encode('utf-8'))
                     except:
                         chat_file.write('<td class="text">Media N/A'.encode('utf-8'))  
+                elif content_type == CONTENT_MEDIA_DOC:
+                    #Search for offline file with current date (+3 days) and known media size                    
+                    linkmedia = findfile ("DOC", y.media_size, y.local_url, date, 3)
+                    try:
+                        chat_file.write('<td class="text"><a onclick="media(this.href);return(false);" target="media" href="{}">DOCUMENT</a>'.format(linkmedia).encode('utf-8'))
+                    except:
+                        chat_file.write('<td class="text">Media N/A'.encode('utf-8'))
+                elif content_type == CONTENT_MISSED_CALL:
+                    try:
+                        chat_file.write('<td class="text">Missed Voice Call'.encode('utf-8'))
+                    except:
+                        chat_file.write('<td class="text">Media N/A'.encode('utf-8'))
+                elif content_type == CONTENT_E2E:
+                    chat_file.write('<td class="text"><i>Message Encrypted</i>'.encode('utf-8'))  
                 elif content_type == CONTENT_VCARD:
                     if y.vcard_name == "" or y.vcard_name is None:
                         vcardintro = ""
@@ -2102,6 +1772,43 @@ def main(argv):
                             chat_file.write('<td class="text"><a onclick="image(this.href);return(false);" target="image" href="https://maps.google.com/?q={},{}">GPS: {}, {}</a>{}'.format(y.latitude, y.longitude, y.latitude, y.longitude, gpsname).encode('utf-8'))
                     except:
                         chat_file.write('<td class="text">GPS N/A'.encode('utf-8'))
+                elif content_type == CONTENT_LIVE_LOC:
+                    try:
+                        if gpsname == "" or gpsname == None:
+                            gpsname = ""
+                        else:
+                            gpsname = "\n" + gpsname
+                        gpsname = gpsname.replace ("\n", "<br>\n")
+                        live_loc_end = datetime.datetime.fromtimestamp(int(y.local_url[-13:])/1000).strftime('%c')
+                        chat_file.write('<td class="text"><a onclick="image(this.href);return(false);" target="image" href="https://maps.google.com/?q={},{}">GPS: {}, {} </a>{}<br>UPTO: {}'.format(y.latitude, y.longitude, y.latitude, y.longitude, gpsname, live_loc_end).encode('utf-8'))
+                    except:
+                        chat_file.write('<td class="text">GPS N/A'.encode('utf-8'))
+                elif content_type == CONTENT_DELETED_MSG:
+                    try:
+                        chat_file.write('<td class="text"><i>Message Deleted</i>'.encode('utf-8'))
+                    except:
+                        chat_file.write('<td class="text">N/A'.encode('utf-8'))
+                elif content_type == CONTENT_STICKER:
+                    if y.local_url is not None:
+                        sticker_name = "STICKER: " + str(y.local_url)
+                    else:
+                        sticker_name = "STICKER"
+                    try:
+                        chat_file.write('<td class="text"><i>{}</i>'.format(sticker_name).encode('utf-8'))
+                    except:
+                        chat_file.write('<td class="text">N/A'.encode('utf-8'))
+                elif content_type == CONTENT_VCARDS:
+                    if y.media_thumb is not None and y.key_id is not None:
+                        vcard_fname = str(y.key_id)+".vcards.txt"
+                        try:
+                            f = open(vcard_fname, "w+")
+                            f.write(str(y.media_thumb))
+                            f.close()
+                            chat_file.write('<td class="text"><a onclick="media(this.href);return(false);" target="media" href="{}">{}</a>'.format(vcard_fname, str(y.local_url)).encode('utf-8'))
+                        except:
+                            chat_file.write('<td class="text">{}'.format(str(y.local_url).encode('utf-8')))
+                    else:
+                        chat_file.write('<td class="text">VCARDS N/A'.encode('utf-8'))
                 elif content_type == CONTENT_NEWGROUPNAME:
                     content_type = CONTENT_OTHER
                 elif content_type != CONTENT_TEXT:
@@ -2179,12 +1886,22 @@ CONTENT_GPS           = 5
 CONTENT_NEWGROUPNAME  = 6
 CONTENT_MEDIA_THUMB   = 7
 CONTENT_MEDIA_NOTHUMB = 8
+CONTENT_MEDIA_DOC     = 9
+CONTENT_MISSED_CALL   = 10
+CONTENT_E2E           = 11
+CONTENT_GIF           = 13
+CONTENT_VCARDS        = 14
+CONTENT_DELETED_MSG   = 15
+CONTENT_LIVE_LOC      = 16
+CONTENT_STICKER       = 20
 CONTENT_OTHER         = 99
 
 flistvid = {}
 flistaud = {}
 flistimg = {}
 flistptt = {}
+flistdoc = {}
+flistgif = {}
 
 css_style = """
 <style type="text/css">
